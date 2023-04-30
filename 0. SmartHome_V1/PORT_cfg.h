@@ -92,7 +92,7 @@
 #define PORTD_PIN3_InValue		HIGH
 #define PORTD_PIN4_InValue		HIGH
 #define PORTD_PIN5_InValue		HIGH
-#define PORTD_PIN6_InValue		LOW
+#define PORTD_PIN6_InValue		HIGH
 #define PORTD_PIN7_InValue		FLOATING
 
 

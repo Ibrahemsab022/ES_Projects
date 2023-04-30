@@ -197,6 +197,8 @@ void LoginHandler(void)
 				CLCD_voidSendData('.');
 				_delay_ms(450);
 				CLCD_voidSendData('.');
+
+				ShutDown();
 			}
 
 			else
@@ -266,43 +268,43 @@ void LightsControl(void)
 
 	ADC_u8StartConversionSynch(ADC_SINGLE_ENDED_CH0, (uint16*)&Local_u8DigitalReading);
 
-	if (Local_u8DigitalReading < 20)
+	if (Local_u8DigitalReading <= 20)
 	{
 		DIO_u8SetPortValue(DIO_u8PORTC,-1);
 		Local_u8LEDsNum = 7;
 	}
 
-	else if((Local_u8DigitalReading > 20) && (Local_u8DigitalReading < 40))
+	else if((Local_u8DigitalReading > 20) && (Local_u8DigitalReading <= 40))
 	{
 		DIO_u8SetPortValue(DIO_u8PORTC, 0b11111110);
 		Local_u8LEDsNum = 6;
 	}
 
-	else if((Local_u8DigitalReading > 50) && (Local_u8DigitalReading < 60))
+	else if((Local_u8DigitalReading > 40) && (Local_u8DigitalReading <= 60))
 	{
 		DIO_u8SetPortValue(DIO_u8PORTC, 0b11111100);
 		Local_u8LEDsNum = 5;
 	}
 
-	else if((Local_u8DigitalReading > 60) && (Local_u8DigitalReading < 70))
+	else if((Local_u8DigitalReading > 60) && (Local_u8DigitalReading <= 70))
 	{
 		DIO_u8SetPortValue(DIO_u8PORTC, 0b11111000);
 		Local_u8LEDsNum = 4;
 	}
 
-	else if((Local_u8DigitalReading > 70) && (Local_u8DigitalReading < 80))
+	else if((Local_u8DigitalReading > 70) && (Local_u8DigitalReading <= 80))
 	{
 		DIO_u8SetPortValue(DIO_u8PORTC, 0b11110000);
 		Local_u8LEDsNum = 3;
 	}
 
-	else if((Local_u8DigitalReading > 80) && (Local_u8DigitalReading < 90))
+	else if((Local_u8DigitalReading > 80) && (Local_u8DigitalReading <= 90))
 	{
 		DIO_u8SetPortValue(DIO_u8PORTC, 0b11100000);
 		Local_u8LEDsNum = 2;
 	}
 
-	else
+	else if (Local_u8DigitalReading > 90)
 	{
 		DIO_u8SetPortValue(DIO_u8PORTC, 0b10000000);
 		Local_u8LEDsNum = 0;

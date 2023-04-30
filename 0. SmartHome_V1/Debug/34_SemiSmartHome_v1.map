@@ -160,7 +160,7 @@ LOAD d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/.
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x391a
+.text           0x00000000     0x392a
  *(.vectors)
  .vectors       0x00000000       0x54 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
                 0x00000000                __vectors
@@ -411,38 +411,38 @@ LOAD d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/.
                 0x00002c92      0x120 ./main.o
                 0x00002c92                WelcomeScreen
  .text.LoginHandler
-                0x00002db2      0x746 ./main.o
+                0x00002db2      0x74a ./main.o
                 0x00002db2                LoginHandler
  .text.FanControl
-                0x000034f8       0x82 ./main.o
-                0x000034f8                FanControl
+                0x000034fc       0x82 ./main.o
+                0x000034fc                FanControl
  .text.LightsControl
-                0x0000357a       0xf0 ./main.o
-                0x0000357a                LightsControl
+                0x0000357e       0xf6 ./main.o
+                0x0000357e                LightsControl
  .text.Dashboard
-                0x0000366a       0x26 ./main.o
-                0x0000366a                Dashboard
+                0x00003674       0x26 ./main.o
+                0x00003674                Dashboard
  .text.ShutDown
-                0x00003690      0x160 ./main.o
-                0x00003690                ShutDown
- .text.libgcc   0x000037f0       0x3e d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
-                0x000037f0                __mulsi3
- .text.libgcc   0x0000382e       0x36 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
-                0x0000382e                __divmodsi4
- .text.libgcc   0x00003864        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
- .text.libgcc   0x00003864        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
- .text.libgcc   0x00003864        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
- .text.libgcc   0x00003864       0x44 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
-                0x00003864                __udivmodsi4
- .text.libgcc   0x000038a8       0x38 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
-                0x000038a8                __prologue_saves__
- .text.libgcc   0x000038e0       0x36 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
-                0x000038e0                __epilogue_restores__
-                0x00003916                . = ALIGN (0x2)
+                0x0000369a      0x166 ./main.o
+                0x0000369a                ShutDown
+ .text.libgcc   0x00003800       0x3e d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00003800                __mulsi3
+ .text.libgcc   0x0000383e       0x36 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x0000383e                __divmodsi4
+ .text.libgcc   0x00003874        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00003874        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00003874        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00003874       0x44 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00003874                __udivmodsi4
+ .text.libgcc   0x000038b8       0x38 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x000038b8                __prologue_saves__
+ .text.libgcc   0x000038f0       0x36 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000038f0                __epilogue_restores__
+                0x00003926                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00003916        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
-                0x00003916                exit
-                0x00003916                _exit
+ .fini9         0x00003926        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00003926                exit
+                0x00003926                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -461,11 +461,11 @@ LOAD d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/.
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00003916        0x4 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .fini0         0x00003926        0x4 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x0000391a                _etext = .
+                0x0000392a                _etext = .
 
-.data           0x00800060       0xce load address 0x0000391a
+.data           0x00800060       0xce load address 0x0000392a
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800060        0x0 d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
@@ -574,8 +574,8 @@ LOAD d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/.
                 0x00800132        0x6 ./EXTI_prog.o
  *(COMMON)
                 0x00800138                PROVIDE (__bss_end, .)
-                0x0000391a                __data_load_start = LOADADDR (.data)
-                0x000039e8                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000392a                __data_load_start = LOADADDR (.data)
+                0x000039f8                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800138        0x0
                 0x00800138                PROVIDE (__noinit_start, .)
@@ -600,7 +600,7 @@ LOAD d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/.
 .signature
  *(.signature*)
 
-.stab           0x00000000     0x3aa4
+.stab           0x00000000     0x3ac8
  *(.stab)
  .stab          0x00000000      0x4e0 ./ADC_prog.o
  .stab          0x000004e0      0xc3c ./CLCD_program.o
@@ -625,8 +625,8 @@ LOAD d:/embedded systems/amgad embedded/tools/sdk_win_64/sdk_win_64/winavr/bin/.
                                 0x1ec (size before relaxing)
  .stab          0x00002910      0x480 ./SSD_prog.o
                                 0x504 (size before relaxing)
- .stab          0x00002d90      0xd14 ./main.o
-                                0xf54 (size before relaxing)
+ .stab          0x00002d90      0xd38 ./main.o
+                                0xf78 (size before relaxing)
 
 .stabstr        0x00000000     0x152e
  *(.stabstr)
